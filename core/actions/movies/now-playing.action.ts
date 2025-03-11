@@ -11,7 +11,7 @@ export const nowPlayingAction = async () : Promise<Movie[]> => {
       MovieMapper.fromTheMovieDbToMovie(movieDbMovie)
     );
 
-    console.log(JSON.stringify(movies, null, 2));
+    // console.log(JSON.stringify(movies, null, 2));
 
     return movies;
   } catch (error) {
